@@ -1,0 +1,218 @@
+
+#project{
+    width: 100vw;
+    height: 750px;
+    /*background-color: black;*/
+    background: black;
+    position: relative;
+}
+#topic>h2.p1{
+    font-size: 70px;
+    position: absolute;
+    left: 750px;
+    margin-top: 60px;
+    color: cyan;
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#topic>h2.p2{
+    color: cyan;
+    position: absolute;
+    left: 790px;
+    font-size: 30px;
+    margin-top: 80px;
+    font-family:"Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#topic>div{
+    width: 300px;
+    height: 5px;
+    position: absolute;
+    background-color: cyan;
+    left: 779px;
+    margin-top: 114px;
+}
+
+#project>section:nth-child(2){
+    display: flex;
+}
+#project>section:nth-child(2)>div{
+     position: relative;
+     display: grid;
+     grid-template-columns:1fr;
+     width: 200px;
+     height: 400px;
+     padding: 17.5px 60px;
+     top: 200px;
+    left: 100px;
+   border-radius: 15px;
+    margin: 10px;
+    background: #0e2945;
+}
+
+
+#project>section:nth-child(2)>div>img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 40px;
+    top: 45px;
+}
+#project>section:nth-child(2)>div>h3{
+    width: 200px;
+    color: white;
+}
+#project>section:nth-child(2)>div>p{
+    position: absolute;
+    top: 250px;
+    left: 5px;
+    color: white;
+}
+#project>section:nth-child(2)>div>a>div{
+   width: 120px;
+    height: 55px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    position: absolute;
+    margin-left: 50px;
+    top: 360px;
+    font-size: 13px;
+}
+#project>section:nth-child(2)>div>a>div:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+#project>section:nth-child(2)>div>a>div>img{
+    width: 50px;
+    height: 50px;
+}
+#project>section:nth-child(2)>div:hover{
+        transform: rotateY(30deg) rotateX(15deg) scale(1.05); /* Apply 3D rotation and slight scaling */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Increase shadow for depth effect */
+    border: cyan 3px solid;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    perspective: 1000px; /* Set the perspective for the 3D effect */
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    }
+
+
+
+@media all and (max-width: 1440px){
+    #project>section:nth-child(2)>div{
+        left: 20px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 1024px){
+
+    #project{
+        height: 1120px;
+    }
+    #topic>h2.p1{
+        left: 400px;
+        margin-top: 60px;
+    }
+    #topic>h2.p2{
+        left: 440px;
+    }
+    #topic>div{
+        left: 440px;
+        margin-top: 114px;
+    }
+    #project>section:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #project>section:nth-child(2)>div{
+        left: 106px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 768px){
+    #topic>h2.p1{
+        font-size: 45px;
+        left: 350px;
+        margin-top: 75px;
+    }
+    #topic>h2.p2{
+        font-size:25px;
+        left: 380px;
+        top: 3px;
+    }
+    #topic>div{
+        width: 200px;
+        height: 3px;
+        left: 370px;
+        margin-top: 110px;
+    }
+    #project>section:nth-child(2)>div{
+        left: 35px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 426px){
+    #project{
+        height: 2000px;
+    }
+    #topic>h2.p1{
+        left: 146px;
+    }
+    #topic>h2.p2{
+        left: 177px;
+    }
+    #topic>div{
+        left: 162px;
+    }
+    #project>section:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #project>section:nth-child(2)>div{
+        left: 50px;
+        margin: 5px;
+    }
+}
+
+@media all and (max-width: 376px){
+    #topic>div{
+       width: 170px;
+    }
+    #project>section:nth-child(2)>div{
+        width: 170px;
+    }
+}
+
+@media all and (max-width: 320px){
+    #topic>h2.p1{
+        left: 85px;
+    }
+    #topic>h2.p2{
+        left: 112px;
+    }
+    #topic>div{
+        width: 130px;
+        left: 105px;
+    }
+    #project>section:nth-child(2)>div{
+        width: 131px;
+        left: 28px;
+        margin: 5px;
+    }
+    #project>section:nth-child(2)>div>a>div{
+        top: 370px;
+    }
+    #project>section:nth-child(2)>div>p{
+        top: 244px;
+    }
+}

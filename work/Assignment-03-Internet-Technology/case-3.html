@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+    <style>
+        #one{
+            width: 200px;
+            aspect-ratio: 1/1;
+            border: 10px solid #8f4545;
+            border-radius: 100%;
+
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            z-index: 9999;
+        }
+
+        #one>div{
+            width: calc(100% - 20px);
+            aspect-ratio: 1/1;
+            border: 10px solid red;
+            border-radius: 100%;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        section{
+            position: absolute;
+            width: fit-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: orange;
+            border-radius: 100%;
+            margin: 310.4px 0px;
+        }
+
+        section>div:nth-child(1)>h4{
+            position: absolute;
+            top:400px;
+            left: 50px;
+            margin: auto;
+        }
+        section>div:nth-child(2)>h4{
+            position: absolute;
+            top:900px;
+            left: 50px;
+            margin: auto;
+        }
+        section>div:nth-child(3)>h4{
+            position: absolute;
+            top:1400px;
+            left: 50px;
+            margin: auto;
+        }
+        section>div:nth-child(1){
+            background-color: greenyellow;
+        }
+
+        section>div:nth-child(2) {
+            background-color: #1db8c6;
+        }
+
+        section>div:nth-child(3){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div id="one">
+    <div></div>
+</div>
+<section>
+    <div><h4>HELLO</h4></div>
+    <div><h4>Welcome To</h4></div>
+    <div><h4>Institute of software Engineering</h4></div>
+</section>
+</body>
+</html>

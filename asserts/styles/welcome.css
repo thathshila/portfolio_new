@@ -1,0 +1,211 @@
+#welcome{
+    display: flex;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 700px;
+}
+#welcome>section:first-child>h1{
+    display: flex;
+    position: absolute;
+    top: 14vh;
+    text-align: center;
+    align-items: center;
+    font-size: 100px;
+    color: #00ffff;
+    left: 10vw;
+    /*animation-iteration-count: infinite;*/
+    /*border: 5px solid white;*/
+}
+#welcome>section:first-child>h1 {
+        font-family: "Island Moments", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+#welcome>section:first-child>h4{
+    display: flex;
+    position: absolute;
+    top: 35vh;
+    font-size: 40px;
+    color: white;
+    left: 15vw;
+}
+#welcome>section:first-child>h3{
+    display: flex;
+    position: absolute;
+    top: 55vh;
+    font-size: 20px;
+    color: cyan;
+    left: 15vw;
+}
+#welcome>section:first-child>span{
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    font-size: 40px;
+    color: white;
+    left: 15vw;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation-iteration-count: infinite;
+}
+#welcome>section:nth-child(3)>img{
+    width: 100vw;
+    height: 100vh;
+}
+#welcome>section:nth-child(3)>div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 440px;
+    border-radius: 100%;
+    background-color: black;
+    /*border: 3px solid aqua;*/
+    left: 15vw;
+}
+#welcome>section:nth-child(3)>div>img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#welcome>section:nth-child(3)>div:nth-child(2){
+    left: 19vw;
+}
+#welcome>section:nth-child(3)>div:nth-child(3){
+    left: 23vw;
+}
+#welcome>section:nth-child(3)>div:nth-child(4){
+    left: 27vw;
+}
+#welcome>section:nth-child(3)>div:nth-child(5){
+    left: 31vw;
+}
+
+
+/*media query for laptop 1440px*/
+@media all and (max-width: 1440px){
+    #welcome{
+        height: 750px;
+    }
+    #welcome>section:nth-child(3)>img{
+        width: 1440px;
+        height: 750px;
+    }
+    #welcome>section:nth-child(3)>div{
+        top: 520px;
+    }
+}
+
+@media all and (max-width: 1024px){
+    #welcome>section:nth-child(3)>div{
+        top: 460px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(2){
+        left: 20vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(3){
+        left: 25vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(4){
+        left: 30vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(5){
+        left: 35vw;
+    }
+}
+
+/*media query for tablet*/
+@media all and (max-width: 769px){
+    #welcome>section:nth-child(3)>img{
+        width: 768px;
+        height: 750px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(2){
+        left: 21vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(3){
+        left: 27vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(4){
+        left: 33vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(5){
+        left: 39vw;
+    }
+}
+
+@media all and (max-width: 426px){
+    #welcome>section:first-child>h1{
+        font-size: 70px;
+    }
+    #welcome>section:first-child>h4{
+        font-size: 30px;
+    }
+    #welcome>section:first-child>span{
+        font-size: 30px;
+    }
+    #welcome>section:nth-child(3)>img{
+        width: 675px;
+        height: 750px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(2){
+        left: 26vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(3){
+        left: 37vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(4){
+        left: 48vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(5){
+        left: 60vw;
+    }
+}
+
+@media all and (max-width: 376px){
+
+}
+
+@media all and (max-width: 320px){
+    #welcome>section:first-child>h1{
+        font-size: 60px;
+    }
+    #welcome>section:first-child>h4{
+        font-size: 30px;
+        top: 30vh;
+    }
+    #welcome>section:first-child>span{
+        font-size: 23px;
+        top: 39vh;
+    }
+    #welcome>section:first-child>h3{
+        top: 47vh;
+        font-size: 18px;
+    }
+    #welcome>section:nth-child(3)>div{
+        top: 400px;
+        left: 15vw;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(2){
+        left: 15vw;
+        top: 448px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(3){
+        left: 15vw;
+        top: 493px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(4){
+        left: 15vw;
+        top: 541px;
+    }
+    #welcome>section:nth-child(3)>div:nth-child(5){
+        left: 15vw;
+        top:  595px;
+    }
+}

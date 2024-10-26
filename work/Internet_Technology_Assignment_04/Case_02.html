@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background: #0e2945;
+    }
+    div{
+        width: 200px;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        background: gray;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    div>h1{
+        color: white;
+        /* element ek purama kiyla aran max width hight ek gannwa*/
+        width: max-content;
+        height: max-content;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    /*div eket aluthin empty content ekk add krnwa*/
+    div::before{
+        content: "";
+        border: 10px solid white;
+        border-radius: 100%;
+        border-top-color: red;
+
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    div:hover::before{
+        transform: rotate(360deg);
+        transition-duration: 2s;
+    }
+</style>
+<body>
+<div>
+    <h1>RWDS</h1>
+</div>
+</body>
+</html>

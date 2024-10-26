@@ -1,0 +1,422 @@
+
+#assignment{
+    width: 100vw;
+    height: 750px;
+    margin:-20px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*background: #0e2945;*/
+    background: black;
+    position: relative;
+}
+#assignment>.a1{
+    font-size: 70px;
+    color: #00ffff;
+    position: absolute;
+    left:750px;
+    margin-top: 60px;
+    font-family:"Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#assignment>.a2{
+    color: white;
+    position: absolute;
+    left: 800px;
+    font-size: 30px;
+    margin-top: 80px;
+    font-family:"Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#assignment>.a3{
+    width: 300px;
+    height: 5px;
+    position: absolute;
+    background-color: #00ffff;
+    left: 799px;
+    margin-top: 110px;
+}
+.wrapper{
+    width: 90%;
+    /*margin: 0 auto;*/
+    max-width: 80rem;
+    background: black;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 90px
+}
+
+.cols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+.container{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.container .back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.container .front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.btn{
+    /*width: 50px;*/
+    /*height: 30px;*/
+    padding: 11.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background: #FFEE58;
+}
+
+@media all and (max-width: 1440px){
+    #assignment{
+        height: 800px;
+        margin: 0;
+    }
+    #assignment>.a1{
+        left: 632px;
+        margin-top: 70px;
+    }
+    #assignment>.a2{
+        left: 675px;
+        margin-top: 90px;
+    }
+    #assignment>.a3{
+        width: 230px;
+        height: 3px;
+        left: 682px;
+        margin-top: 125px;
+    }
+    .wrapper {
+        width: 880px;
+        margin-top: 270px;
+        margin-left: 359px;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px){
+    #assignment{
+        margin: 0;
+        height: 650px;
+    }
+    #assignment>.a1{
+        left: 435px;
+        margin-top: 50px;
+    }
+    #assignment>.a2{
+        left: 485px;
+        margin-top: 72px;
+    }
+    #assignment>.a3{
+        width: 220px;
+        height: 3px;
+        left: 487px;
+        margin-top: 105px;
+    }
+    .wrapper {
+        width: 880px;
+        margin-top: 230px;
+        margin-left: 90px;
+        max-width: 100%;
+    }
+}
+
+/*media query for tablet*/
+@media all and (max-width: 768px){
+
+    #assignment{
+        height: 642px;
+        margin:-20px;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*background: #0e2945;*/
+        background: black;
+        position: relative;
+    }
+    #assignment>.a1{
+        font-size: 45px;
+        position: absolute;
+        left: 376px;
+        margin-top: 50px;
+        color: #00ffff;
+        font-family: "Kameron", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    #assignment>.a2{
+        font-size: 25px;
+        position: absolute;
+        left: 402px;
+        margin-top: 60px;
+        color: white;
+        font-family: "Kameron", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    #assignment>.a3{
+        width: 200px;
+        height: 3px;
+        position: absolute;
+        background-color: #00ffff;
+        left: 409px;
+        margin-top: 85px;
+    }
+        .wrapper {
+            width: 700px;
+            margin-top: 150px;
+            margin-left: 60px;
+            max-width: 100%;
+        }
+        .col {
+            width: calc(90% - 1rem);
+            margin: 1rem 0;
+        }
+        .container {
+            width: 100%;
+        }
+        .front,
+        .back {
+            min-height: 100px;
+            font-size: 1.2rem;
+        }
+        .front .inner p {
+            font-size: 1.5rem;
+        }
+        .btn {
+            padding: 10px 25px;
+            font-size: 1rem;
+        }
+    }
+
+@media all and (max-width: 426px){
+    #assignment{
+        height: 642px;
+        margin:0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*background: #0e2945;*/
+        background: black;
+        position: relative;
+    }
+    #assignment>.a1{
+        left: 125px;
+        margin-top: 50px;
+    }
+    #assignment>.a2{
+        left: 160px;
+        margin-top:57px;
+    }
+    #assignment>.a3{
+        left: 160px;
+        margin-top: 85px;
+    }
+    .wrapper {
+        width: 350px;
+        margin-top: 150px;
+        margin-left: 60px;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 376px){
+    #assignment{
+        height: 642px;
+        margin:0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*background: #0e2945;*/
+        background: black;
+        position: relative;
+    }
+    #assignment>.a1{
+        left: 125px;
+        margin-top: 50px;
+    }
+    #assignment>.a2{
+        left: 155px;
+        margin-top:57px;
+    }
+    #assignment>.a3{
+        width: 170px;
+        left: 160px;
+        margin-top: 85px;
+    }
+    .wrapper {
+        width: 315px;
+        margin-top: 150px;
+        margin-left: 35px;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 320px){
+    #assignment{
+        height: 642px;
+        margin:0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*background: #0e2945;*/
+        background: black;
+        position: relative;
+    }
+    #assignment>.a1{
+        left: 72px;
+        margin-top: 50px;
+    }
+    #assignment>.a2{
+        left: 102px;
+        margin-top:57px;
+    }
+    #assignment>.a3{
+        width: 160px;
+        left: 105px;
+        margin-top: 85px;
+    }
+    .wrapper {
+        width: 265px;
+        margin-top: 150px;
+        margin-left: 30px;
+        max-width: 100%;
+    }
+    .inner>p{
+        display: none;
+    }
+}
