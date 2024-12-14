@@ -54,7 +54,6 @@
 <body>
 <!--header section-->
 <header>
-    <i class="fas fa-bars hamburger" id="hamburger"></i>
     <!--logo section-->
     <section>
         <img src="asserts/images/my-logo.png" title="logo" alt="logo">
@@ -70,9 +69,13 @@
             <li><a href="index.html#education">Education</a></li>
             <li><a href="index.html#gallery">Gallery</a></li>
             <li><a href="index.html#contact">Contact</a></li>
-            <i class='bx bxs-moon' id="icon"></i>
         </ul>
     </nav>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
 <!--hero section-->
 <main id="welcome">
@@ -411,9 +414,12 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="asserts/script.js"></script>
 <script>
-   document.getElementById("hamburger").addEventListener("click",function (){
-       document.querySelector("header>nav>ul"). classList.toggle("active");
-   });
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 </script>
 </body>
 </html>
